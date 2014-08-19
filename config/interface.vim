@@ -129,7 +129,7 @@ set number
 set hlsearch
 
 if has("gui_running") 
-	colorscheme nerv-ous
+	colorscheme ubloh
 	set number
 	set guioptions-=m  "remove menu bar
 	set guioptions-=T  "remove toolbar
