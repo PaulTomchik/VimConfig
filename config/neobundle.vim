@@ -24,11 +24,12 @@ NeoBundle 'Shougo/vimproc.vim', {
 " Takes a long time to build. 
 " Really slows down NeoBundleUpdate.
 " Better to uncomment and build as needed.
-NeoBundle 'https://github.com/Valloric/YouCompleteMe.git' , {
-      \ 'build' : {
-      \    'unix' : './install.sh --clang-completer --system-libclang'
-      \ },
-\ }
+NeoBundle 'https://github.com/Valloric/YouCompleteMe.git'
+", {
+"      \ 'build' : {
+"      \    'unix' : './install.sh --clang-completer --system-libclang'
+"      \ },
+"\ }
 
 NeoBundle 'Lokaltog/vim-easymotion.git'
 NeoBundle 'Shougo/vimshell.vim.git'
