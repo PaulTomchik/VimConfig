@@ -98,6 +98,19 @@ endif
 let g:neocomplcache_force_omni_patterns.java = '\k\.\k*'
 
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" JsBeautify
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+" for html
+"autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+" for css or scss
+"autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -115,3 +128,9 @@ let g:neocomplcache_force_omni_patterns.java = '\k\.\k*'
 "let g:SuperTabContextDefaultCompletionType = "<c-n>"
 "set wildmode=list:longest,full
 "let g:SuperTabClosePreviewOnPopupClose = 1 " close scratch window on autocompletion
+
+
+"let g:dbext_default_SQLSRV_cmd_terminator = ";"
+" end 0/9/14
+" Octave syntax 
+
