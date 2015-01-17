@@ -35,7 +35,6 @@ NeoBundle 'Lokaltog/vim-easymotion.git'
 NeoBundle 'Shougo/vimshell.vim.git'
 NeoBundle 'Shougo/neomru.vim.git'
 NeoBundle 'Shougo/unite.vim.git'
-"NeoBundle 'marijnh/tern_for_vim.git'
 NeoBundle 'scrooloose/nerdcommenter.git'
 NeoBundle 'scrooloose/nerdtree.git'
 NeoBundle 'scrooloose/syntastic.git'
@@ -47,9 +46,17 @@ NeoBundle 'tpope/vim-abolish.git'
 NeoBundle 'ervandew/supertab.git'
 NeoBundle 'Raimondi/delimitMate.git'
 NeoBundle 'airblade/vim-rooter.git'
-NeoBundle 'vimwiki/vimwiki.git'
+"NeoBundle 'vimwiki/vimwiki.git'
 NeoBundle 'tpope/vim-fugitive.git'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
+
+" For Node development
+NeoBundle 'moll/vim-node'
+NeoBundle 'godlygeek/tabular'
+"NeoBundle 'walm/jshint.vim'
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+NeoBundle 'marijnh/tern_for_vim.git'
+NeoBundle 'rsludge/vim-sails'
 
 " NOTE: Must do vimball manually
 " https://twitter.com/ShougoMatsu/status/354578023397343232

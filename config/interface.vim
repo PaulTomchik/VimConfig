@@ -237,3 +237,14 @@ endif
 "autocmd QuickFixCmdPost [^l]* nested cwindow
 "autocmd QuickFixCmdPost    l* nested lwindow
 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sails config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Treat .ejs files as html
+au BufReadPost *.ejs set syntax=html
+
+" format JSON
+map <Leader>j !python -m json.tool<CR>
