@@ -28,12 +28,14 @@ nnoremap <F5> :GundoToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Valloric/YouCompleteMe
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
-"let g:ycm_complete_in_strings = 1
-"let g:ycm_collect_identifiers_from_comments_and_strings = 1
-"let g:ycm_collect_identifiers_from_tags_files = 1
-"let g:ycm_seed_identifiers_with_syntax = 1
-"let g:ycm_confirm_extra_conf = 0
+
+let g:ycm_complete_in_strings = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 
 
@@ -41,11 +43,11 @@ nnoremap <F5> :GundoToggle<CR>
 " Eclim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:EclimCompletionMethod = 'omnifunc'
-let g:EclimKeepLocalHistory = 1
-nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
-nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
-nnoremap <silent> <buffer> <leader>s :JavaSearchContext<cr>
+"let g:EclimCompletionMethod = 'omnifunc'
+"let g:EclimKeepLocalHistory = 1
+"nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+"nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
+"nnoremap <silent> <buffer> <leader>s :JavaSearchContext<cr>
 
 
 
@@ -115,14 +117,14 @@ let g:neocomplcache_force_omni_patterns.java = '\k\.\k*'
 " Supertab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-" Remap autocomplete menu control keys
+ "Remap autocomplete menu control keys
 "inoremap <expr> <Esc> pumvisible() ? "\<C-e>" : "\<Esc>"
 "inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 "inoremap <expr> j pumvisible() ? "\<C-n>" : "j"
 "inoremap <expr> k pumvisible() ? "\<C-p>" : "k"
 "inoremap <expr> h pumvisible() ? "\<PageUp>\<C-n>\<C-p>" : "h"
 "inoremap <expr> l pumvisible() ? "\<PageDown>\<C-n>\<C-p>" : "l"
-""
+
 "let g:SuperTabCrMapping = 0 " prevent remap from breaking supertab
 "let g:SuperTabDefaultCompletionType = "context"
 "let g:SuperTabContextDefaultCompletionType = "<c-n>"

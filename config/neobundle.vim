@@ -53,10 +53,11 @@ NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
 " For Node development
 NeoBundle 'moll/vim-node'
 NeoBundle 'godlygeek/tabular'
-"NeoBundle 'walm/jshint.vim'
+NeoBundle 'walm/jshint.vim'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundle 'marijnh/tern_for_vim.git'
 NeoBundle 'rsludge/vim-sails'
+NeoBundle 'wincent/Command-T'
 
 " NOTE: Must do vimball manually
 " https://twitter.com/ShougoMatsu/status/354578023397343232

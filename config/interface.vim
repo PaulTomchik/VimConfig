@@ -14,6 +14,9 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+autocmd FileType make setlocal noexpandtab
+au BufRead,BufNewFile *.tsv     set filetype=tsv noet ts=8 sts=0
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -175,7 +178,7 @@ highlight SpellBad term=standout ctermfg=Black term=underline ctermbg=Red
 let g:jedi#use_splits_not_buffers = "left"
 
 " Execute python script in current buffer
-map <Leader>z :!python3 %<CR>
+map <Leader>z :!python %<CR>
 au Filetype python setl et ts=2 sw=2
 
 
@@ -248,3 +251,5 @@ au BufReadPost *.ejs set syntax=html
 
 " format JSON
 map <Leader>j !python -m json.tool<CR>
+
+
