@@ -49,6 +49,7 @@ NeoBundle 'airblade/vim-rooter.git'
 "NeoBundle 'vimwiki/vimwiki.git'
 NeoBundle 'tpope/vim-fugitive.git'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
+NeoBundle 'rking/ag.vim'
 
 " For Node development
 NeoBundle 'moll/vim-node'
