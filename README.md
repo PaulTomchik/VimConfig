@@ -14,10 +14,10 @@ Architecture dependent command  in buildYCM.sh
 ```bash
 mv $HOME/VimConfig/ .vim
 ln -s $HOME/.vim/config/.vimrc $HOME/.vimrc
-cd .vim
 ```
 
 ```bash
+cd .vim/setup
 chmod +x ./plugin-dependencies.sh ./installNeoBundle.sh ./buildYCM.sh
 ```
 ```bash
