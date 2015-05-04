@@ -8,8 +8,8 @@ ENDPT="${LLVM_ADDR}${LLVM_VER}/${CLANG_VER}${EXTENSION}"
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 
-mkdir -p /home/paul/ycm_temp/llvm_root_dir
-pushd /home/paul/ycm_temp/
+mkdir -p ${HOME}/ycm_temp/llvm_root_dir
+pushd ${HOME}/ycm_temp/
 
 # For ARM7 chip.
 # wget http://llvm.org/releases/3.3/clang+llvm-3.3-armv7-linux-gnueabihf.tar.gz 
@@ -23,6 +23,6 @@ mv "${CLANG_VER}" llvm_root_dir
 cd ~
 mkdir -p ycm_build
 cd ycm_build
-cmake -G "Unix Makefiles" . /home/paul/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+cmake -G "Unix Makefiles" . ${HOME}/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 make ycm_support_libs
 make
